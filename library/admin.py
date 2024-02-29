@@ -1,3 +1,7 @@
 from django.contrib import admin
-
-# Register your models here.
+from .models import libraryEntry
+    
+class LibraryAdmin(admin.ModelAdmin):
+    list_display = ('deckID', 'cardIDs')
+    
+admin.site.register(libraryEntry, LibraryAdmin)
