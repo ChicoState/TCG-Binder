@@ -7,3 +7,6 @@ def profile(request):
 
 def home(request):
     return render(request, 'pages/homepage.html')
+
+def library(request):
+    return render(request, 'pages/library.html')

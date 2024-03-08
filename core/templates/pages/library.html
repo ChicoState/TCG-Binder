@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="hero min-h-screen bg-base-200">
+  <div class="hero-content text-center">
+    <div class="max-w-md">
+      <h1 class="text-5xl font-bold">{{ request.user.username }} Library</h1>
+      <p class="py-6">Welcome to your library</p>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
